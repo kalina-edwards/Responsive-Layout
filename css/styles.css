@@ -161,9 +161,16 @@ h2 {
 }
 
 .intro-face p {
+	width: 50%;
 	padding-right: 10px;
 	font-size: 1.2em;
 	margin-top: 0;
+}
+
+.intro-face img {
+	width: 400px;
+	height: 300px;	
+	max-width: 50%;
 }
 
 /*images-1 & images-2 used as floats*/
@@ -272,15 +279,20 @@ nav,
 	padding-top: 40px;
 }
 	
-
 .intro-face p {
-	width: 100%;
+	max-width: 50%;
 	padding: 0px 20px;
 	font-size: 1.50em;
 	text-align: left;
 	margin-top: 0;
 }	
 	
+.intro-face img {
+	width: 500px;
+	height: 380px;
+	max-width: 50%;
+}
+
 .images {
 	max-width: 100%;
 	display: flex;
