@@ -1,0 +1,316 @@
+/* ================================= 
+		Type Selectors
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	color: #000;
+}
+
+img {
+	max-width: 100%;
+}
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: blue;
+}
+
+h2 {
+	padding: 20px;
+}
+
+/* ================================= 
+ 	Class Selectors
+==================================== */
+.main-header,
+.container,
+.main-footer {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.main-header,
+.main-footer {
+	background: #f7f7f7;
+}
+
+.name {
+	font-size: 1.25em;
+	padding: 10px 15px;
+	margin-top: 0;
+	line-height: 2;
+}
+
+.name {
+	text-align: center;
+	padding:0;
+}
+
+
+.main-nav {
+	margin: 0 auto;
+	padding-left: 0;
+}
+.main-nav li {
+	background: #fff;
+	border: solid 1px white;
+	margin-bottom: 10px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.intro-face {
+	width: 100%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.intro-face p{
+	padding-bottom: 25px;
+	line-height: 2;
+}
+
+.intro-face img{
+	max-width: 50%;
+}
+
+.container div p {
+	padding-bottom: 50px;
+}
+
+.main-footer {
+	margin: 0;
+	line-height: 2;
+}
+
+.main-footer h3 {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	font-size: 1.125em; /* 18px / 16px */
+}
+
+.contact-info p {
+	font-size: 0.75em; /* 12px / 16px*/
+	padding-bottom: 1em;
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 1em; /* 16px / 16px */
+}
+
+
+.student-name,
+.to-top {
+	font-weight: bold;
+}
+
+.bottom-nav {
+	display: none;
+}
+
+/* ================================= 
+	Media Queries: MIN-WIDTH- 768PX
+==================================== */
+
+@media (min-width:768px) {
+
+.main-header {
+	padding-bottom: 70px;	
+}
+
+.main-nav li {
+	display: inline-block;
+	background-color: transparent;
+	border: 0;
+	margin-top: 0;
+	margin-right: 15px;
+	font-size: 1.2em;
+}
+
+.name {
+	padding: 10px 15px;
+	margin-top: 0;
+}
+
+.intro-face {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.intro-face p {
+	width: 50%;
+	padding-right: 10px;
+	font-size: 1.2em;
+	margin-top: 0;
+}
+
+.intro-face img {
+	width: 400px;
+	height: 300px;	
+	max-width: 50%;
+}
+
+/*images-1 & images-2 used as floats*/
+.images-1,
+.images-2 {
+	max-width: 45%;
+	display: inline-block;
+	padding: 10px;
+}
+
+.images-1 {
+	float: left;
+	clear: both;
+}
+
+.images-2 {
+	float: right;
+}
+
+.main-footer h3 {
+	margin: 0 auto;
+	font-size: 1.125em; /* 18px / 16px*/ 
+}
+
+.main-footer p,
+.contact-info {
+	padding-left: 3.5em;
+	padding-right: 3.5em;
+}
+
+.contact-info p {
+	font-size: 1em; /* 12px / 16px*/
+	padding-bottom: .5em;
+	text-align: center;
+}
+.footer-links .student-name{
+	padding-left: 0;
+}
+
+.student-name,
+.bottom-nav {
+	font-size: 1.2em;
+}
+
+.bottom-nav {
+	display: inherit;
+}
+
+.bottom-nav li {
+	border: solid 1px transparent;
+	margin-bottom: 10px;
+	padding-right: 15px;
+	font-weight: bold;
+}
+
+.to-top {
+	display: none;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+}
+
+
+/* ================================= 
+	Media Queries: MIN-WIDTH- 1024PX
+==================================== */
+
+@media (min-width:1024px) {
+
+nav {
+	display: inline-block;
+}
+
+.name {
+	font-size: 1.75em;
+	float: left;
+	text-align: center;
+	clear: both;
+}
+
+.main-nav {
+	float: right;
+	margin-top: 0;
+	padding: 15px 15px;
+}
+
+.main-nav li {
+	font-size: 1.35em;
+	padding: 10px;
+} 
+
+.intro-face,
+nav,
+.container {
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	clear: both;
+}
+
+.intro-face {
+	padding-top: 40px;
+}
+	
+.intro-face p {
+	max-width: 50%;
+	padding: 0px 20px;
+	font-size: 1.50em;
+	text-align: left;
+	margin-top: 0;
+}	
+	
+.intro-face img {
+	width: 500px;
+	height: 380px;
+	max-width: 50%;
+}
+
+.images {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.images p {
+	font-size: 1em;
+}
+
+.main-footer p {
+	font-size: 1.2em;
+}
+
+div .student-name,
+.bottom-nav {
+	font-size: 1.35em;
+	padding-right: 15px;
+}
+}
